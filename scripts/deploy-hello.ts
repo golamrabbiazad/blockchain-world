@@ -1,5 +1,3 @@
-import "@nomiclabs/hardhat-ethers";
-
 import { ethers } from "hardhat";
 
 async function deploy() {
@@ -14,4 +12,9 @@ async function sayHello(hello: any) {
   console.log("Say hello: ", await hello.hello());
 }
 
-deploy().then(sayHello);
+deploy()
+  .then(sayHello)
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });

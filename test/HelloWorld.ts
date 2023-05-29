@@ -1,5 +1,3 @@
-import _ from "@nomiclabs/hardhat-ethers";
-
 import { ethers } from "hardhat";
 import { expect } from "chai";
 
