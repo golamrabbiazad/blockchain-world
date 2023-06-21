@@ -5,3 +5,7 @@ dist
 .yarn
 .pnp.cjs
 .pnp.loader.mjs
+
+# typechains
+typechain
+typechain-types
